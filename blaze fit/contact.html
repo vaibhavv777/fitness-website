@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlazeFit — Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="main2.html">Home</a></li>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="diet.html">Diet</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <section class="page-hero">
+      <h1>Contact Us</h1>
+      <p>Have questions or feedback? We’d love to hear from you!</p>
+    </section>
+
+    <section class="auth-container">
+      <h2>Send us a message</h2>
+      <form id="contact-form">
+        <label for="c-name">Name:</label>
+        <input type="text" id="c-name" name="name" required>
+
+        <label for="c-email">Email:</label>
+        <input type="email" id="c-email" name="email" required>
+
+        <label for="c-message">Message:</label>
+        <textarea id="c-message" name="message" required style="min-height:120px;"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <section class="auth-container" style="margin-top:40px;">
+      <h2>Owner Details</h2>
+      <p><strong>Name:</strong> vaibhav meena</p>
+      <p><strong>Email:</strong> meenavaibhav90@gmail.com</p>
+      <p><strong>Phone:</strong> +91 9799229182</p>
+      <p><strong>Location:</strong> india</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 BodyForge. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e){
+      e.preventDefault();
+      alert("Thank you for contacting us! We'll get back to you soon.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

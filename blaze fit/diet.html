@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BlazeFit — Diet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="diet.html" class="active">Diet</a></li>
+      <li><a href="community.html">Community</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+
+  <main class="page">
+    <section class="page-hero">
+      <h1>Nutrition</h1>
+      <p>Calculate your calories, macros & get sample meal ideas</p>
+    </section>
+
+    <section class="diet-grid">
+    
+      <div class="diet-left">
+        <h2>Calorie & Macro Calculator</h2>
+        <label>Weight (kg)</label>
+        <input id="d-weight" type="number" placeholder="e.g. 75">
+
+        <label>Activity Level</label>
+        <select id="d-activity">
+          <option value="1.2">Sedentary</option>
+          <option value="1.375">Light</option>
+          <option value="1.55">Moderate</option>
+          <option value="1.725">Active</option>
+        </select>
+
+        <label>Goal</label>
+        <select id="d-goal">
+          <option value="maintain">Maintain</option>
+          <option value="bulk">Bulk (+300 kcal)</option>
+          <option value="cut">Cut (-300 kcal)</option>
+        </select>
+
+        <button class="btn" onclick="calcDiet()">Calculate</button>
+        <div id="dietResult" class="plan-output"></div>
+      </div>
+
+      <div class="diet-right">
+        <h3>Sample Foods</h3>
+        <img src="assets/diet1.jpg" alt="Chicken meal" class="food fade-in">
+        <img src="assets/diet2.jpg" alt="Rice & veggies" class="food fade-in">
+        <img src="assets/diet3.jpg" alt="Protein shake" class="food fade-in">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>"The real workout starts when you want to stop" — Ronnie Coleman</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

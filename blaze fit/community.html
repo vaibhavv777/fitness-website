@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BlazeFit — Community</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="training.html">Training</a></li>
+      <li><a href="diet.html">Diet</a></li>
+      <li><a href="community.html" class="active">Community</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <main class="page">
+    <section class="page-hero">
+      <h1>Community</h1>
+      <p>Share tips, progress, and motivation with fellow athletes</p>
+    </section>
+
+    <section class="community">
+      <textarea id="com-input" placeholder="Share a tip or update..."></textarea>
+      <div class="row">
+        <input id="com-name" placeholder="Your name (optional)">
+        <button class="btn" onclick="postComment()">Post</button>
+      </div>
+      <div id="com-list" class="comments-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>"Take care of your body. It's the only place you have to live" — Jim Rohn</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
